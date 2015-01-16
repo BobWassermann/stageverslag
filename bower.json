@@ -1,0 +1,8 @@
+{
+  "name": "stageverslag",
+  "version": "0.0.0",
+  "dependencies": {
+    "skrollr": "~0.6.29",
+    "animate.css": "~3.2.0"
+  }
+}

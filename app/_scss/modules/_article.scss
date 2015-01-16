@@ -1,0 +1,56 @@
+$article--width: 65%;
+$article--quote-size: 50px;
+
+article {
+  h1, h2, h3, h4, p {
+    width: $article--width;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+    @include transition(.2s);
+    &:hover {
+      padding-bottom: 0.1em;
+    }
+  }
+  blockquote {
+    padding: 1.5em 2em;
+    margin: 3em 0;
+    font-style: italic;
+    background: darken(#fff, 3);
+    position: relative;
+    @include transition(.2s);
+    &:after {
+      content: "\201D";
+      position: absolute;
+      color: white;
+      background: lighten(#000, 20);
+      width: $article--quote-size;
+      height: $article--quote-size;
+      border-radius: 180px;
+      text-align: center;
+      top: -$article--quote-size/2;
+      left: calc(50% - #{$article--quote-size});
+      font-size: 2.5rem;
+      line-height: 1.8em;
+      text-indent: -0.2em;
+      @include transition(.2s);
+    }
+
+    &:active {
+      background: #ff3a29;
+      color: white;
+      @include transform(scale(1.1));
+      a {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+      &:after {
+        @include transform(rotate(180deg));
+      }
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- build:css({app,.tmp}) /css/main.css -->
+        <!-- Syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+
+      <div id="hero" data-0="background-position-y: -20vh;" data-250="background-position-y: -50vh;">
+        <h1>{{ site.name }}</h1>
+      </div>
+
+
+        <div id="container">
+
+          {{ content }}
+
+        </div>
+
+    <!-- build:js(app) /js/scripts.js -->
+    <script src="//use.typekit.net/rzo1bop.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script src="/_bower_components/skrollr/dist/skrollr.min.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- endbuild -->
+    </body>
+</html>

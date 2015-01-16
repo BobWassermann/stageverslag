@@ -1,0 +1,11 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+
+{% for post in site.posts %}
+  <article>
+    {{ post.content }}
+  </article>
+{% endfor %}
