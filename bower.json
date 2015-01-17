@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "skrollr": "~0.6.29",
-    "animate.css": "~3.2.0"
+    "animate.css": "~3.2.0",
+    "font-awesome": "~4.2.0"
   }
 }

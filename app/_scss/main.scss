@@ -1,2 +1,20 @@
-@import 'compass', 'compass/reset', 'base/colors', 'base/typography';
-@import 'modules/hero', 'modules/article';
+@import 'compass', 'compass/reset', '../_bower_components/font-awesome/scss/font-awesome','../_bower_components/animate.css/animate.css', 'base/colors', 'base/typography';
+@import 'modules/article', 'modules/hero';
+
+#container {
+  position: relative;
+  top: 70vh;
+  padding: 6rem 0;
+}
+
+a.twitter {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+  color: #55ACEE;
+  @include transition(.2s);
+    &:hover {
+      @include transform(scale(1.2));
+    }
+}
