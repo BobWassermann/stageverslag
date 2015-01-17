@@ -15,4 +15,9 @@
   "strict": false,
   "trailing": true,
   "smarttabs": true
+  "globals": {
+    "$": false,
+    "jQuery": false,
+    "skrollr": false
+  }
 }
