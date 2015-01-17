@@ -289,6 +289,14 @@ module.exports = function (grunt) {
       dist: {
         options: {
           remote: '../',
+          branch: 'master',
+          commit: true,
+          push: true
+        }
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:BobWassermann/stageverslag.git',
           branch: 'gh-pages',
           commit: true,
           push: true
@@ -386,7 +394,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'buildcontrol'
+    'buildcontrol:pages'
     ]);
 
   grunt.registerTask('default', [
