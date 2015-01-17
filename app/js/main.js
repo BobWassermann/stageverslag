@@ -1,6 +1,7 @@
+/*global $:false */
 'use strict';
 
-(function(skrollr, $){
+(function(){
   var s = skrollr.init();
 
   $('p img').each(function(){
