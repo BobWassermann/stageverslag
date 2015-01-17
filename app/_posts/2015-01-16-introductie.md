@@ -16,4 +16,4 @@ Uiteindelijk besloot ik niet langer te zoeken naar vacatures, in plaats van de g
 > Bob Wassermann
 
 
-![MoreSleep office](img/topview.png)
+![MoreSleep office](./img/topview.png)
