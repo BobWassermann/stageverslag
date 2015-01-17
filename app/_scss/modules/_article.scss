@@ -35,7 +35,7 @@ article {
       left: calc(50% - #{$article--quote-size});
       font-size: 2.5rem;
       line-height: 1.8em;
-      text-indent: -0.2em;
+      text-indent: -0.1em;
       @include transition(.2s);
     }
 
