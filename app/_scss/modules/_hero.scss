@@ -3,6 +3,7 @@
   width: 100%;
   background: image-url('hero.jpg') no-repeat;
   background-position-x: center;
+  background-position-y: -20vh;
   background-size: cover;
   position: absolute;
   &:before {

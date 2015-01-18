@@ -12,3 +12,18 @@
   });
 
 })();
+
+(function(){
+
+  $(window).scroll(function(){
+    var scrollPos = $(window).scrollTop();
+    var articleVisible = $('article').offset().top - ($(window).height() / 2);
+
+    if (scrollPos > articleVisible) {
+      $('nav ul li').eq(0).addClass('active');
+    } else {
+      $('nav ul li').removeClass('active');
+    }
+  });
+  
+})();

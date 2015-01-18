@@ -1,0 +1,38 @@
+nav {
+  position: fixed;
+  top: 50%;
+  @include transform(translateY(-50%));
+  z-index: 10;
+  font-size: 0.9rem;
+  @extend %din;
+  @include tablet {
+    display: none;
+  }
+  li {
+    margin: 0.5em 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: lighten(#000, 40);
+    @include transition(.2s);
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      content: "";
+      @include transition(.2s);
+      width: 1em;
+      height: 1px;
+      background: black;
+      position: absolute;
+      left: 0;
+      margin-top: 0.3em;
+    }
+    &.active {
+      margin: 0.5em 3.5em;
+      color: #000;
+      &:before {
+        width: 2.5em;
+      }
+    }
+  }
+}

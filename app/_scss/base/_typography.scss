@@ -1,7 +1,14 @@
 $text-color: $lightgrey;
 $leitura-news: "leitura-news", serif;
 $serif: $leitura-news;
+$sans-serif: "pragmatica-web", helvetica, arial, sans-serif;
+$din: "din-condensed-web", sans-serif;
 $body--font: $serif;
+
+%din {
+  font-family: $din;
+  font-weight: 400;
+}
 
 body {
   font-size: 24px;
@@ -11,7 +18,7 @@ body {
 
 h1 {
   font-size: 7rem;
-  font-family: "pragmatica-web", 'helvetica', 'arial' sans-serif;
+  font-family: $sans-serif;
   font-weight: 800;
   letter-spacing: -4px;
   @include tablet {
@@ -25,7 +32,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  font-family: "pragmatica-web",sans-serif;
+  font-family: $sans-serif;
   font-weight: bold;
   text-align: center;
   padding: 1em;

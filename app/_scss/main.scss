@@ -1,9 +1,9 @@
 @import 'compass', 'compass/reset', 'base/mq', '../_bower_components/font-awesome/scss/font-awesome','../_bower_components/animate.css/animate.css', 'base/colors', 'base/typography';
-@import 'modules/article', 'modules/hero';
+@import 'modules/nav', 'modules/article', 'modules/hero';
 
 #container {
   position: relative;
-  top: 70vh;
+  top: 50vh;
   padding: 6rem 0;
   width: 100%;
   overflow-x: hidden;
