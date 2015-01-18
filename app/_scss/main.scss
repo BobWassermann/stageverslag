@@ -1,10 +1,15 @@
-@import 'compass', 'compass/reset', '../_bower_components/font-awesome/scss/font-awesome','../_bower_components/animate.css/animate.css', 'base/colors', 'base/typography';
+@import 'compass', 'compass/reset', 'base/mq', '../_bower_components/font-awesome/scss/font-awesome','../_bower_components/animate.css/animate.css', 'base/colors', 'base/typography';
 @import 'modules/article', 'modules/hero';
 
 #container {
   position: relative;
   top: 70vh;
   padding: 6rem 0;
+  width: 100%;
+  overflow-x: hidden;
+  @include mobile {
+    top: 40vh;
+  }
 }
 
 a.twitter {
@@ -16,5 +21,8 @@ a.twitter {
   @include transition(.2s);
     &:hover {
       @include transform(scale(1.2));
+    }
+    @include mobile {
+      position: absolute;
     }
 }

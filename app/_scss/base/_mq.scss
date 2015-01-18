@@ -1,0 +1,24 @@
+$mq--mobile-mini-max: 450px;
+$mq--mobile-max: 605px;
+$mq--tablet-max: 1024px;
+
+@mixin mini-mobile {
+  @media
+    only screen and (max-width: $mq--mobile-mini-max) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media
+    only screen and (max-width: $mq--mobile-max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media
+    only screen and (max-width: $mq--tablet-max) {
+    @content;
+  }
+}

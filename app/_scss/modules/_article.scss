@@ -1,10 +1,18 @@
 $article--width: 65%;
 $article--quote-size: 50px;
+$article-tablet--width: 75%;
+$article-mobile--width: 85%;
 
 article {
   h1, h2, h3, h4, p {
     width: $article--width;
     margin: auto;
+    @include tablet {
+      width: $article-tablet--width;
+    }
+    @include mobile {
+      width: $article-mobile--width;
+    }
   }
   a {
     text-decoration: none;
@@ -37,6 +45,9 @@ article {
       line-height: 1.8em;
       text-indent: -0.1em;
       @include transition(.2s);
+    }
+    @include mobile {
+      padding: 2em 1.5em;
     }
 
     &:active {
