@@ -22,6 +22,7 @@ show_drafts: true
 # Markdown library
 markdown: redcarpet
 redcarpet:
-  extensions: ['fenced_code_blocks', 'smart']
+  extensions: ['hard_wrap', 'fenced_code_blocks', 'smart', 'autolink']
 
 pygments: true
+encoding: utf-8
