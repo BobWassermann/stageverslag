@@ -18,8 +18,10 @@
   $(window).scroll(function(){
     var scrollPos = $(window).scrollTop();
     var articleVisible = $('article').offset().top - ($(window).height() / 2);
+    var articleEnd = articleVisible + $('article').height();
 
-    if (scrollPos > articleVisible) {
+    if (scrollPos > articleVisible && scrollPos < articleEnd) {
+      console.log($(this).index());
       $('nav ul li').eq(0).addClass('active');
     } else {
       $('nav ul li').removeClass('active');
