@@ -16,6 +16,3 @@ Na enkele emailtjes gevolgd door Skype-gesprek was er al gauw een band. 1 Septem
 > My favorite movie soundtrack? I have to cheat, but I love "Take Five" ([http://open.spotify.com/track/7tqiz1qq9UKwW6I5TGscfN](http://open.spotify.com/track/7tqiz1qq9UKwW6I5TGscfN)) by The Desmond Quintet, it was on The Simpsons once.<br/>
 > Stay awesome, keep throwing movie quotes at the internet,<br/>
 > Bob Wassermann
-
-
-![MoreSleep office](./img/topview.png)
